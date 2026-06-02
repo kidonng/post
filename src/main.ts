@@ -143,6 +143,6 @@ export default {
       return proxyRequest();
     }
 
-    return new Response("Bad Request", { status: 400 });
+    return new Response("Not Found", { status: 404 });
   },
 } satisfies ExportedHandler<Env>;
